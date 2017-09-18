@@ -1,0 +1,20 @@
+core: 8.x
+type: theme
+
+name: 'drupal8_theme'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Theme'
+
+libraries:
+  - drupal8_theme/global-styling
+
+regions:
+  navigation: 'Navigation'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'

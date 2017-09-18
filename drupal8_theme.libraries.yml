@@ -1,0 +1,10 @@
+global-styling:
+  css:
+    theme:
+      build/css/lib/bootstrap.min.css: {}
+      build/css/style.css: {}
+  js:
+    theme:
+      build/js/script.js: {}
+  dependencies:
+    - core/jquery
