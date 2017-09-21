@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var imageop = require('gulp-image-optimization');
+var cache = require('gulp-cache');
 
 
 gulp.task('copy:jslib', function () {
@@ -22,11 +23,11 @@ gulp.task('copy:fonts', function () {
 
 gulp.task('copy:images', function() {
     return gulp.src('./source/images/**')
-        .pipe(imageop({
+        .pipe(cache(imageop({
             optimizationLevel: 5,
             progressive: true,
             interlaced: true
-        }))
+        })))
         .pipe(gulp.dest('./build/images/'));
 });
 
